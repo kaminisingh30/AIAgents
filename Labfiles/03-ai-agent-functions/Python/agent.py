@@ -5,7 +5,11 @@ from pathlib import Path
 
 
 # Add references
-
+# Add references
+from azure.identity import DefaultAzureCredential
+from azure.ai.agents import AgentsClient
+from azure.ai.agents.models import FunctionTool, ToolSet, ListSortOrder, MessageRole
+from user_functions import user_functions
 def main(): 
 
     # Clear the console
